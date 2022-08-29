@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="works.css">
+</head>
+<body>
+    <section id="about">
+ <nav class="navbar">
+    <img src="mmenuicon.png" class="hamburger">
+  <a href="" class="logo">akin <span>tunde</span></a>
+         <ul class="menu-pages">
+             <li><a href="index1.html" class="list-item">Home</a></li>
+             <li><a href="about.html" class="list-item">About Me </a></li>
+             <li><a href="works.html" class="list-item">works</a></li>
+             <li><a href="reach.html" class="list-item">Reach </a></li>
+             <li><a href="skills.html" class="list-item">  Skills</a></li>
+             <li><a href="blog.html" class="list-item">Blogs</a></li>
+         </ul>
+     </nav>
+    </section>
+    <div class="myworkss">
+        <div class="mylinks">
+            <a href="My resume 2/index.html">work 1</a>
+            <a href="Age Calculator/index.html">Age calculator</a>
+            <a href="Animated Menu Icon/index.html">Animated MenuIcon</a>
+            <a href="Advanced Calculator/index.html">Scientific calculator</a>
+            <a href="Animated web/index.html">Animated web</a>
+            <a href="Bike site/index.html">Bike site</a>
+            <a href="a search bar/index.html">search-bar</a>
+            <a href="Bulb Switch Web/index.html">Bulb switch web</a>
+            <a href="Hotstar clone/hot-star/index.html">Hotstar Clone</a>
+            <a href="js clock/index.html">clock</a>
+            <a href="music site/index.html">music site</a>
+            <a href="Neomorphism button/index.html">Neomorphism button</a>
+            <a href="NetflixClone2/Moviepics/Index2.html">Netflix clone</a>
+            <a href="Password Length/index.html">password length</a>
+            <a href="pure js slider/index.html">Pure JS slider</a>
+            <a href="Responsive Paginations/index.html">navbar</a>
+            <a href="side Nav Menu/index.html">side nav </a>
+            <a href="store website/index.html">store website</a>
+            <a href="SVG Animated Text/index.html">svg</a>
+            <a href="responsive/index.html">food</a>
+            <a href="Tesla Website/index.html">car web</a>
+            <a href="Text animation/index.html">text animation</a>
+            <a href="Visa folder/index.html">debit card</a>
+            <a href="A Launch Web/index.html">Timer web</a>
+            <a href="Video call Front End Design/index.html"> video call ui</a>
+            <a href="akinfabiyi/index.html">test</a>
+            <a href="pre & nxt btns/index.html">pre and nxt</a>
+        </div>
+    </div>
+   
+    
+<script>
+    
+//hamburger for About Hamburger
+const hamburger = document.querySelector(".hamburger");
+const menuPages = document.querySelector(".menu-pages");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    menuPages.classList.toggle("active");
+
+})
+document.querySelectorAll(".list-item").forEach(n => n.
+    addEventListener("click", () =>{
+        hamburger.classList.remove("active")
+        menuPages.classList.remove("active")
+
+    }))
+
+
+</script>
+</body>
+</html>

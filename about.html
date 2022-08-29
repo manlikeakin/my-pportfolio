@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <section id="about">
+ <nav class="navbar">
+    <img src="mmenuicon.png" class="hamburger">
+  <a href="" class="logo">akin <span>tunde</span></a>
+         <ul class="menu-pages">
+             <li><a href="index1.html" class="list-item">Home</a></li>
+             <li><a href="about.html" class="list-item">About Me </a></li>
+             <li><a href="works.html" class="list-item">works</a></li>
+             <li><a href="reach.html" class="list-item">Reach </a></li>
+             <li><a href="skills.html" class="list-item">  Skills</a></li>
+             <li><a href="blog.html" class="list-item">Blogs</a></li>
+         </ul>
+     </nav>
+    </section>
+  <div class="aniabt">
+    <div class="abtsec">
+        <h1 class="aboutme">About me</h1>
+   </div>
+    <div class="cont1">
+        <img src="me.jpg" class="my-img">
+        <div class="text">
+          <p class="mex">My name is Akintunde and I'm a Front End Web Developer. <br>
+              I got into the tech space <br> approximately 5months counting from <br>
+              April 2022 and since then I have been doing remarkably <br>well in learning and 
+              project execution. <br>
+              I'm currently proficient in the use of the following tech tools: <br>
+              Hypertext Markup Language  (HTML) <br> Cascading Style Sheet (CSS), JavaScript. <br>
+              and of recent I picked up React.JS in a bid to augment <br>my versatility and of course
+              align <br> my self with the current web language trend. <br>
+              I enjoy coding because it simply brings out <br>
+              an individual's creativity. 
+          </p>
+    </div>
+    </div>
+   
+  </div>
+<script>
+    
+//hamburger for About Hamburger
+const hamburger = document.querySelector(".hamburger");
+const menuPages = document.querySelector(".menu-pages");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    menuPages.classList.toggle("active");
+
+})
+document.querySelectorAll(".list-item").forEach(n => n.
+    addEventListener("click", () =>{
+        hamburger.classList.remove("active")
+        menuPages.classList.remove("active")
+
+    }))
+
+
+</script>
+</body>
+</html>
